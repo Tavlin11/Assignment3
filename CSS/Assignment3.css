@@ -1,0 +1,138 @@
+body{
+    
+    color:whitesmoke;
+   
+    
+   
+   }
+   body::after{
+	content:"";
+	
+	background-image: url("../images/background3.jpg");
+	opacity:0.8;
+	position:fixed;
+    z-index:-1;
+    top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	 background-repeat: no-repeat;
+    background-size: cover;
+	background-position: 50% 0;
+	
+}
+a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    p{
+        float: left;
+        text-align: left;
+        background-color:191919;
+        background-blend-mode: lighten;
+        background-color: black;
+        opacity: 0.8;
+        
+    }
+    
+    .parent{
+     /* background-color: black;*/	
+     opacity: 0.96;
+      text-align: center;
+      display: grid;
+      grid-template-areas: "header header header header header header "
+                           "img1 img1 img1 img2 img2 img2"
+                           "sec1 sec1 sec1 sec2 sec2 sec2"
+                           "footer footer footer footer1 footer1 footer1";
+    
+      grid-gap: 5px;
+     padding: 10px;
+    } 
+ 
+
+
+.box1{
+    border: 1px solid black;
+    grid-area: header;
+    color:black;
+   }
+  header{
+    color: white;
+  }
+  
+  .box2{
+    border: 1px solid black;
+    grid-area: img1;
+    padding: 10px;
+  }
+  
+  .box3{
+    border: 1px solid black;
+    grid-area: img2;
+    padding: 10px;
+  }
+.box4{
+    border: 1px solid black;
+    grid-area: sec1;
+      display: flex;
+      flex-wrap: wrap;
+      
+}
+.box5{
+    border: 1px solid black;
+    grid-area: sec2;
+      display: flex;
+      flex-wrap: wrap;
+}
+.pic1{
+	text-align: center;
+	width: 50%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.pic1 img{
+	float: left;
+    margin-left: 10px;
+}
+.pic2{
+	text-align: center;
+	width: 50%;
+	
+}       
+.pic2 img{
+	float: left;
+	margin-left: 10px;
+}
+.box5{
+    border: 1px solid black;
+    grid-area: sec2;
+      display: flex;
+      flex-wrap: wrap;
+}
+.box6{
+  border: 1px solid black;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  
+  
+  }
+  .box7{
+  border: 1px solid black;
+  grid-area: footer1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  }
+.link1{
+font-size: 24px;
+	
+}
+.link2{
+	font-size: 24px;
+}
+
+
+

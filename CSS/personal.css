@@ -1,0 +1,46 @@
+body.personal::after{
+	content:"";
+	background-color: aqua;
+	opacity:0.8;
+	position:fixed;
+    z-index:-1;
+    top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+}
+	
+.personal .info ul li {
+font-size:28px;
+padding-bottom:40px;
+text-align:left; 
+
+}
+.personal img {
+padding:20px;
+position: inherit;
+
+}
+
+.atag { color:blue; font-size:20px; font-weight:bold; 
+}
+.container{
+    display: grid;
+    grid-template-areas:
+   "header header"
+   "gravity inter"
+   "para1 para2"
+   "leftmain  rightmain"
+   "footer1 footer2";
+ grid-template-columns: auto auto ;
+ grid-gap: 10px; 
+ padding: 10px;
+}
+.container > div {
+ background-color: rgba(255, 255, 255, 0.6);
+ border: 1px solid black;
+ text-align: center;
+ padding:14px;
+ font-size:17px;
+}
